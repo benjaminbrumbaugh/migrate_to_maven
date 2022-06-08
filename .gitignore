@@ -1,5 +1,21 @@
+# IDE
 .idea/
+
+# Output
 out/
 target/
+
+# HTS resources
 src/edu.gladstone.hts/resources/
+
+# OS X
 .DS_STORE
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
