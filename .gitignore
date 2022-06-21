@@ -1,5 +1,5 @@
 .idea/
 out/
 src/edu.gladstone.hts/resources/
-resources/
+src/edu/gladstone/hts/resources/
 *.json
