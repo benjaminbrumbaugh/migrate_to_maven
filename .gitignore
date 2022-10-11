@@ -7,7 +7,6 @@ target/
 
 # HTS resources
 src/edu.gladstone.hts/resources/
-*.json
 
 # OS X
 .DS_STORE
@@ -22,3 +21,4 @@ env.bak/
 venv.bak/
 
 # Credentials
+*.json
