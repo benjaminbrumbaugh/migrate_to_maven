@@ -1,5 +1,8 @@
-# Installing local jar files into maven project
-The purpose of this project is to install jar files that don't exist in online artifact repositories (or do!) and must be manually installed.
+# Create Maven/Gradle project
+Converts an existing java project to use [Apache Maven](https://maven.apache.org>). If you like, you can then convert a maven project into a [Gradle](https://gradle.org) project using gradle's [built-in conversion tool](https://docs.gradle.org/current/userguide/migrating_from_maven.html). It uses a hueristic approach with a series of strategies to try to recover as much of the missing metadata as possible that maven (and gradle) requires. The *correctness* of this jar metadata starts strong; for instance jars that already have the metadata in them. With each passing strategy the recovered metadata is less likely to be *correct*, because this metadata has problems (straight up missing, placed in an incorrect field, etc). **However**, for the most part we don't actually care about what this metadata *says*, or even that it's correct, we just care that we have something and can therefore have maven install the jar. So although this tool goes through extensive effort to try to make this metadata as correct as it can be, some slop in data recovery is expected and normal, but thankfully doesn't generally impact projects negatively.
+
+## Installing local jar files into maven project
+The purpose of this tool is to install jar files that don't exist in online artifact repositories (or do!) and must be manually installed.
 These end up in you user's maven cache .m2 directory: `~/.m2`. You can delete this directory to clean without consequence if needed:
 ```
 rm -rf ~/.m2
