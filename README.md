@@ -45,3 +45,9 @@ You only need to  add them as you use them in your code.
 ## But I want to use Gradle instead of Maven
 Gradle can initialize a project based off a `pom.xml` file. This script uses the approach of installing into Maven, and converting to Gradle, rather than
 try to configure both. At time of writing, this is untested as we are not using Gradle.
+
+## Help!
+```File "/Users/bbrumbaugh/Documents/Projects/migrate_to_maven/main.py", line 73
+    match suffix:
+          ^```
+Conda environment wasn't created or activated. Try creating and activating Conda with the `environment.yml` as outlined above.
