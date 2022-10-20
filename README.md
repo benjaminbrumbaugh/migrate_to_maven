@@ -47,7 +47,9 @@ Gradle can initialize a project based off a `pom.xml` file. This script uses the
 try to configure both. At time of writing, this is untested as we are not using Gradle.
 
 ## Help!
-```File "/Users/bbrumbaugh/Documents/Projects/migrate_to_maven/main.py", line 73
+```
+File "/Users/bbrumbaugh/Documents/Projects/migrate_to_maven/main.py", line 73
     match suffix:
-          ^```
+          ^
+```
 Conda environment wasn't created or activated. Try creating and activating Conda with the `environment.yml` as outlined above.
